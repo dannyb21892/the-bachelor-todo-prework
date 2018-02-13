@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
   
   i = 0
   while i < ppl.length
-    if ppl[i][:status] == "Winner"
+    if ppl[i]["status"] == "Winner"
       name = ppl[i][:name].split(" ")
       return name[0]
     end
