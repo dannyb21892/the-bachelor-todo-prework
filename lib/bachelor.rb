@@ -22,10 +22,8 @@ def count_contestants_by_hometown(data, hometown)
   out = 0
   data.each do |season, players|
   players.each do |player|
-    player.each do |stat, value|
-      if value == occupation
-        player["name"]
-      end
+    if player["hometown"] == hometown
+      player["name"]
     end
   end
 end
