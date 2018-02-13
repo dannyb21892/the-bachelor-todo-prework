@@ -47,7 +47,7 @@ def get_average_age_for_season(data, season)
   total = 0
   ppl = data[season]
   ppl.each do |player|
-    total += player[:age].to_f
+    total += player["age"].to_f
   end
   return total / ppl.length
 end
