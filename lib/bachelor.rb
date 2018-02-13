@@ -26,6 +26,7 @@ def count_contestants_by_hometown(data, hometown)
         out += 1
       end
     end
+  end
   out
 end
 
